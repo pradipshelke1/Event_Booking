@@ -121,7 +121,7 @@ router.post('/login', [
     jwt.sign(payload , process.env.JWT_SECRET_KEY , (err , token) => {
       if(err) throw err;
       response.status(200).json({
-        result : 'Login Success',
+        msg : 'Login Success',
         token : token,
         user : user
       });

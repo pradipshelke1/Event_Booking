@@ -8,12 +8,14 @@ import ProEvents from "./events/pro-events/ProEvents";
 import UploadEvent from "./events/upload-event/UploadEvent";
 import Login from "./users/login/Login";
 import Register from "./users/register/Register";
+import Alert from "./root/util/alert/Alert";
 
 function App() {
   return (
     <React.Fragment>
       <Router>
         <Navbar />
+        <Alert />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/events/free" component={FreeEvents} />

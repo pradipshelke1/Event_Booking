@@ -11,3 +11,6 @@ body {
 .text-teal{
   color: teal !important;
 }
+.bg-light-blue{
+  background-color: #e9e9e9;
+}
